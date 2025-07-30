@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="家庭料理について">
+    <link rel="shortcut icon" href="./assets/image/favicon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <title>Home Cooking</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="header-logo">
+        <a href="index.html"><img src="./assets/image/Home.svg" alt="Home Cookingのロゴ"></a>
+      </div>
+      <nav class="nav" id="nav">
+        <ul>
+          <li><a href="#box1">肉じゃが</a></li>
+          <li><a href="#box2">料理・食べ物の説明</a></li>
+          <li><a href="#box3">好きな理由</a></li>
+          <li><a href="#box4">アレンジレシピ</a></li>
+        </ul>
+      </nav>
+      <div class="menu-btn" id="menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <div class="slider">
+      <picture>
+        <source media="(min-width: 1024px)" srcset="./assets/image/slider1.svg">
+        <source media="(min-width: 768px)" srcset="./assets/image/slider1-1.svg">
+        <img src="./assets/image/slider1-1.svg" alt="スライド1">
+      </picture>
+      <picture>
+        <source media="(min-width: 1024px)" srcset="./assets/image/slider2.svg">
+        <source media="(min-width: 768px)" srcset="./assets/image/slider1-1.svg">
+        <img src="./assets/image/slider2-2.svg" alt="スライド2">
+      </picture>
+      <picture>
+        <source media="(min-width: 1024px)" srcset="./assets/image/slider3.svg">
+        <source media="(min-width: 768px)" srcset="./assets/image/slider1-1.svg">
+        <img src="./assets/image/slider3-3.svg" alt="スライド3">
+      </picture>
+    </div>
+
+    <div class="wrap">
+      <div class="box1 inner" id="box1">
+        <div class="title-box">
+          <h2 class="title-name">肉じゃが</h2>
+          <span class="sub-name">肉じゃが</span>
+        </div>
+        <div class="info">
+          肉じゃがは、日本の家庭料理を代表する一品。ほくほくのじゃがいもに、甘辛い味付けがしみ込んだ素朴な味わいが魅力です。シンプルな材料と調味料で手軽に作れるため、和食の基本を学ぶにもぴったりの料理です。
+        </div>
+        <ul class="link-box">
+          <li><a href="#">料理・食べ物の説明<img src="./assets/image/under.png" alt="三角画像"></a></li>
+          <li><a href="#">好きな理由<img src="./assets/image/under.png" alt="三角画像"></a></li>
+          <li><a href="#">アレンジレシピ<img src="./assets/image/under.png" alt="三角画像"></a></li>
+        </ul>
+      </div>
+
+      <div class="line"></div>
+
+      <div class="box2 inner" id="box2">
+        <div class="title-box">
+          <h2 class="title-name">料理・食べ物の説明</h2>
+          <span class="sub-name">説明</span>
+        </div>
+        <div class="box2-c">
+          <div class="img-box">
+            <img src="./assets/image/box2-1.png" alt="box2画像">
+            <img src="./assets/image/box2-2.png" alt="box2画像">
+          </div>
+          <div class="info">
+            肉じゃがは、じゃがいも・にんじん・玉ねぎ・肉（主に牛肉や豚肉）を、醤油・みりん・砂糖・だしで甘辛く煮た和風の煮物料理です。家庭料理の定番で、ご飯によく合います。
+          </div>
+        </div>
+      </div>
+
+      <div class="line"></div>
+
+      <div class="box3 inner" id="box3">
+        <div class="title-box">
+          <h2 class="title-name">好きな理由</h2>
+          <span class="sub-name">理由</span>
+        </div>
+        <div class="box3-c">
+          <div class="box3-cw">
+            <img src="./assets/image/box3-1.png" alt="box3-1画像">
+            <div class="boxes">
+              <div class="wrap-image"><img src="./assets/image/reason-image/reason1.png" alt="理由１画像"></div>
+              <div class="info">醤油と砂糖ベースの甘辛味は、白ご飯と相性抜群。</div>
+              <div class="btn">
+                <a href="#">もっと見る</a>
+                <img src="./assets/image/under.png" alt="三角画像">
+              </div>
+            </div>
+          </div>
+
+          <div class="s-line"></div>
+
+          <div class="box3-cw sp">
+            <div class="boxes">
+              <div class="wrap-image"><img src="./assets/image/reason-image/reason2.png" alt="理由２画像"></div>
+              <div class="info">各家庭で味付けや具材の微妙な違いがあり、懐かしさや安心感を与える。</div>
+              <div class="btn">
+                <a href="#">もっと見る</a>
+                <img src="./assets/image/under.png" alt="三角画像">
+              </div>
+            </div>
+            <img src="./assets/image/box3-2.png" alt="box3-2画像">
+          </div>
+
+          <div class="box3-sp">
+            <img src="./assets/image/box3-2.png" alt="box3-2画像">
+            <div class="boxes">
+              <div class="wrap-image"><img src="./assets/image/reason-image/reason2.png" alt="理由２画像"></div>
+              <div class="info">各家庭で味付けや具材の微妙な違いがあり、懐かしさや安心感を与える。</div>
+              <div class="btn">
+                <a href="#">もっと見る</a>
+                <img src="./assets/image/under.png" alt="三角画像">
+              </div>
+            </div>
+          </div>
+
+          <div class="s-line"></div>
+
+          <div class="box3-cw">
+            <img src="./assets/image/box3-3.png" alt="box3-3画像">
+            <div class="boxes">
+              <div class="wrap-image"><img src="./assets/image/reason-image/reason3.png" alt="理由３画像"></div>
+              <div class="info">煮るだけでできるので、料理初心者にもやさしい。</div>
+              <div class="btn">
+                <a href="#">もっと見る</a>
+                <img src="./assets/image/under.png" alt="三角画像">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="line"></div>
+
+      <div class="box4 inner" id="box4">
+        <div class="title-box">
+          <h2 class="title-name">アレンジレシピ</h2>
+          <span class="sub-name">アレンジ</span>
+        </div>
+        <div class="box4-c">
+          <div class="box4-cw">
+            <img src="./assets/image/box4-1.png" alt="box4-1画像">
+            <div class="cw-b">
+              <div class="name">肉じゃがカレー</div>
+              <div class="info">
+                肉じゃがカレーは、肉じゃがの甘辛い旨みとカレーのスパイス感がマッチした絶品アレンジです。
+              </div>
+              <div class="btn4">
+                <a href="#">レシピを見る</a>
+                <img src="./assets/image/under.png" alt="三角画像">
+              </div>
+            </div>
+          </div>
+          <div class="box4-cw">
+            <img src="./assets/image/box4-2.png" alt="box4-1画像">
+            <div class="cw-b">
+              <div class="name">肉じゃがカレー</div>
+              <div class="info">
+                肉じゃがカレーは、肉じゃがの甘辛い旨みとカレーのスパイス感がマッチした絶品アレンジです。
+              </div>
+              <div class="btn4">
+                <a href="#">レシピを見る</a>
+                <img src="./assets/image/under.png" alt="三角画像">
+              </div>
+            </div>
+          </div>
+          <div class="box4-cw">
+            <img src="./assets/image/box4-3.png" alt="box4-1画像">
+            <div class="cw-b">
+              <div class="name">肉じゃがカレー</div>
+              <div class="info">
+                肉じゃがカレーは、肉じゃがの甘辛い旨みとカレーのスパイス感がマッチした絶品アレンジです。
+              </div>
+              <div class="btn4">
+                <a href="#">レシピを見る</a>
+                <img src="./assets/image/under.png" alt="三角画像">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer" id="footer">
+      <div class="footer-logo">
+        <a href="index.html"><img src="./assets/image/Home.svg" alt="Home Cookingのロゴ"></a>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>
