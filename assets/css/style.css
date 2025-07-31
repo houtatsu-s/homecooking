@@ -204,7 +204,7 @@ img {
   align-items: center;
   width: 100%;
   height: 100%;
-  font-size: 20px;
+  font-size: 22px;
   color: #4E342E;
 }
 .link-box img {
@@ -282,16 +282,27 @@ img {
   width: 100%;
   height: 400px;
   background: #FDF6E3;
+  border: 2px solid #FBB982;
+
 }
-.box3-cw img {
+.im-box {
   width: 470px;
-  height: 100%;
+  height: 396px;
+  position: relative;
+  background: #FFFFFF;
+}
+.im-box img {
+  width: 400px;
+  height: 360px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border-radius: 10px;
 }
 .boxes {
   width: 530px;
   height: 100%;
-  border: 1px solid #FBB982;
   padding: 16px;
   position: relative;
 }
@@ -317,8 +328,8 @@ img {
 }
 .btn {
   display: inline-block;
-  width: 186px;
-  height: 40px;
+  width: 190px;
+  height: 50px;
   border-radius: 6px;
   background: #C68E17;
   position: absolute;
@@ -333,6 +344,7 @@ img {
 .btn a {
   line-height: 100%;
   height: 100%;
+  font-size: 18px;
   text-align: center;
   align-items: center;
   display: flex;
@@ -410,7 +422,7 @@ img {
   bottom: 26px;
   right: 65px;
   width: 190px;
-  height: 42px;
+  height: 50px;
   border-radius: 6px;
   background: #C68E17;
   box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.5);
@@ -421,7 +433,7 @@ img {
 }
 .btn4 a {
   height: 100%;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   display: flex;
   justify-content: center;
@@ -464,7 +476,7 @@ img {
 /* フッター部分 */
 
 /* スマホレスポンシブ */
-@media screen and (min-width: 375px) and (max-width: 767px)  {
+@media screen and (min-width: 375px) and (max-width: 1339px)  {
   /* 共通部分 */
   .line {
     display: none;
@@ -607,7 +619,7 @@ img {
   }
   .slider img {
     width: 100%;
-    height: 170px;
+    height: auto;
     object-fit: cover;
   }
   .slide-btn {
@@ -646,14 +658,15 @@ img {
   }
   .link-box {
     display: block;
-    width: auto;
+    width: 85%;
     height: auto;
+    margin: 0 auto;
   }
   .link-box li {
     background: #C68E17;
     border-radius: 6px;
     width: 100%;
-    height: 110px;
+    height: 70px;
     margin: 0 0 20px;
   }
   .link-box li:last-child {
@@ -673,29 +686,29 @@ img {
     background: none;
   }
   .img-box {
-    width: 345px;
+    min-height: 345px;
     margin: 0 auto;
     display: block;
     justify-content: center;
   }
   .img-box img {
-    width: 100%;
-    height: 200px;
-    margin: 0 0 20px;
-    object-fit: cover;
+    width: 90%;
+    height: 270px;
+    margin: 0 auto 20px;
+    object-fit: contain;
   }
   .img-box img:last-child {
-    margin: 0;
+    margin: 0 auto;
   }
   .box2-c .info {
-    width: 300px;
-    height: 125px;
+    width: 80%;
+    height: 250px;
     padding: 0 2%;
     margin: 25px auto 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 16px;
+    font-size: 18px;
     color: #4E342E;
     font-weight: bold;
     background: #FFFFFF;
@@ -710,7 +723,7 @@ img {
     visibility: visible;
   } 
   .s-line {
-    width: 345px;
+    width: 100%;
     height: 2px;
     background: #000000;
     border-radius: 5px;
@@ -732,9 +745,13 @@ img {
   .box3-cw.sp img {
     display: none;
   }
+  .im-box {
+    width: auto;
+    height: 220px;
+  }
   .box3-cw img {
-    width: 80%;
-    height: 200px;
+    width: 90%;
+    height: 170px;
     margin: 0 auto 14px;
   }
   .box3-sp {
@@ -743,10 +760,15 @@ img {
     width: 100%;
     height: auto;
     background: #FFFFFF;
+    border: 2px solid #FBB982;
   }
-  .box3-sp img {
-    width: 80%;
-    height: 200px;
+  .im-box {
+    width: 100%;
+    height: 220px;
+  }
+  .im-box img {
+    width: 90%;
+    height: 170px;
     margin: 0 auto 14px;
   }
   .boxes {
@@ -773,8 +795,8 @@ img {
   .btn {
     display: block;
     margin: 0 auto 20px;
-    width: 186px;
-    height: 40px;
+    width: 190px;
+    height: 50px;
     bottom: 0;
     right: 0;
     position: relative;
@@ -837,9 +859,17 @@ img {
   .box4-cw:last-child {
     margin: 0;
   }
-  .box4-cw img {
-    height: 250px;
+  .box4-im {
+    min-width: 375px;
+    min-height: 260px;
+  }
+  .box4-im img {
+    height: 100%;
     object-fit: contain;
+    border-radius: 10px;
+  }
+  .cw-b {
+    margin: 15px 0 0;
   }
   .cw-b .name {
     width: 133px;
@@ -855,7 +885,7 @@ img {
     bottom: 0;
     right: 0;
     width: 190px;
-    height: 42px;
+    height: 50px;
     border-radius: 6px;
     margin: 0 auto;
     box-shadow: none;
